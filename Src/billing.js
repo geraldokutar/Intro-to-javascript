@@ -1,5 +1,8 @@
 /*This is the percentage that determines the transaction charge*/
-const transactionCharge = 0.025;
-var amountTendered = 100000;
-console.log("This is what the billed amount is (less transaction charges);")
-console.log(amountTendered-transactionCharge*amountTendered);
+const billing =(amountTendered, transactionCharge) => {
+
+  console.log("This is what the billed amount is (less transacrion charges);");
+  return amountTendered - transactionCharge *amountTendered;
+}
+
+console.log(billing(100000,0.025));
