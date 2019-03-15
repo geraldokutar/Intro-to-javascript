@@ -1,6 +1,7 @@
-function getAge(d1, d2){
-   d2 = d2 || new Date();
-   var diff = d2.getTime() - d1.getTime();
-   return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+const year = dates => {
+  var currentYear = 2019;
+
+  var age = currentYear - dates;
+  console.log(age + "years");
 }
-console.log( getAge(new Date(2016,1,1)) );
+console.log(year(2001));
